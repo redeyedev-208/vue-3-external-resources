@@ -1,39 +1,48 @@
 <template>
-  <ul></ul>
+  <stored-resources :resources="storedResources">
+    
+  </stored-resources>
 </template>
 
 <script>
+import StoredResources from './components/learning-resources/StoredResources.vue';
 export default {
+  components: {
+    StoredResources,
+  },
   data() {
-    storedResources: [
-      {
-        id: 'vue-3-official-guide',
-        title: 'Official Guide',
-        description: 'The official Vue.js (Vue 3) documentation',
-        link: 'https://vuejs.org',
-      },
-      {
-        id: 'google',
-        title: 'Google',
-        description: 'Learn to google...',
-        link: 'https://google.org',
-      },
-    ];
+    return {
+      storedResources: [
+        {
+          id: 'vue-3-official-guide',
+          title: 'Official Guide',
+          description: 'The official Vue.js (Vue 3) documentation',
+          link: 'https://vuejs.org',
+        },
+        {
+          id: 'google',
+          title: 'Google',
+          description: 'Learn to google...',
+          link: 'https://google.org',
+        },
+      ],
+    };
   },
 };
 </script>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+body {
+  margin: 0;
 }
 </style>
