@@ -50,7 +50,6 @@
         </p>
       </div>
 
-      <!-- Description Field -->
       <div class="form-control">
         <label for="description">Enter a short description</label>
         <textarea
@@ -69,7 +68,6 @@
         </p>
       </div>
 
-      <!-- Link Field -->
       <div class="form-control">
         <label for="link">Enter the resource link</label>
         <input
@@ -165,7 +163,6 @@ textarea:focus {
   margin: 1rem 0;
 }
 
-/* Accessibility Description Text */
 .sr-only {
   position: absolute;
   width: 1px;
